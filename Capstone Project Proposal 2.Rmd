@@ -1,0 +1,69 @@
+---
+title: "Project Proposal"
+author: "Stephanie Sears"
+date: "7/08/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This Capstone Project is a text mining and sentiment analysis study. It focuses on the R&B music of Patti LaBelle, Whitney Houston and Mariah Carey between the period of 1980 and 1995. By analyzing social media comments, it seeks to discover descriptive themes pertinent to popular African American Women R&B singers of that time period. Given the salience of the idea of the “diva,” this project seeks to uncover how audiences identify with the top divas of R&B and the ways in which their interactivity with media constructs notions of "the popular." It uses data science to understand the audience interactive behavior that correlates to popularity and aims to build a self-consistent explanation or model that might interpret that behavior.
+
+## **Problem**
+
+With the advent of social media metrics such as “likes,” “follows,” “pins,” “shares,” “comments,” and “views,” the everyday connoisseur of culture enjoys a greater stake in the social construction of power. Indeed, cultivating fandom, an effect of the ease in which audiences now express “belonging” and “non-belonging” through mediated platforms, is currently a cultural practice. Its prevalence has transformed how people interact and intersect with popular culture. As it is now possible to become a career “influencer” utilizing social media platforms, it is of profound interest to researchers to examine the ways in which cultural consciousness gains considerable social force.
+
+That an influential social force is garnering strength through mediated platforms is no new phenomenon. But the growing importance of popular culture as a context of public power is compelling. In such a context we witness the transformation of popular expression into persuasive commentary that can either launch a public figure into stardom or topple an embattled icon, ensuring a purposively shameful fall from grace. Once relegated a marginal influence, popular culture has became an integral force in the socialization of collective consciousness. As a result, the everyday person participates in the curating of the collective self-image. A vote cast (as a “like”, a “share”, or a “follow,” etc) represents the collective self-image of society and their awareness of the current (historical and political) moment in time.
+
+
+Religious scholar, [Robin Sylvan (2002)](https://nyupress.org/9780814798096/) explores the ways in which popular culture has morphed into a religious phenomenon, particularly as experienced through popular music. He writes,
+
+
+> “Observers of culture and scholars of religion have said many things about the slow decline of religion and the death of God in Western civilization….[R]eligion and God are not dead, but very much alive and well and dancing to the beat of popular music; the religious impulse has simply migrated to another sector of the culture, a sector in which religious sensibilities have flourished and made an enormous impact on a large portion of the population….Yet, because conventional wisdom has taught us to regard popular music as trivial forms of secular entertainment, these religious dimensions remain hidden from view, marginalized and misunderstood” (p. 3).
+
+Sylvan seeks to make explicit the ways in which popular contexts reveal hidden examples of contemporary religiosity. As a result, he raises the value of the notion of “the popular.” As contemporary folks elect a “popular,” they raise new deity forms as well. In addition, they reconstitute notions of “the sacred” and “ritual.” The problem is that these new forms remain hidden and, without proper attention to this phenomenon, it is likely that unintended psycho-spiritual consequences remained unexamined as well.
+
+
+##  **Potential Audience/Clients and Their Concerns**
+
+People interested in this study are scholars of religion, women’s studies, media studies, communication studies, and political science studies. Making explicit the hidden forces underlying social and behavioral phenomena is a particular focus of these academic disciplines. Part of the objective of these disciplines is to solve practical problems. However, it is difficult to plan for solution without full understanding of the depth and scope of problems. By understanding the ways in which social commenting in identifying “the popular” reflect self, belief, and notions of the divine, this group may begin to think differently about the solutions they ponder. Based on my analysis, researchers will have access to data that reflects contemporary socio-religious norms of considerable persuasive power.
+
+## **Data**
+
+I will create a dataset from the YouTube channels of the 3 singers named above: PattiLabelleVevo, Whitney Houston, and Mariah Carey. I will use the tuber package to extract the pertinent data from these channels. Data consists of likes, dislikes, most popular songs, and viewer comments.
+
+## **Methodological Approach**
+
+* **Create and clean a dataset**
+
+  Using the tuber package, I will extract YouTube comment data from the YouTube channels named above and create construct parameters that determine the limits of selection. I will create the dataset and use data wrangling to prepare the data for analysis.
+
+* **Perform concept extraction/counting observations**
+
+  I will create a construct defining the metric "popularity." With this construct, popularity will be observed by the difference between the number of 'likes' and 'dislikes' plus comments. Comments that are included feature laudatory sentiments such as "I love this singer," "my favorite singer," and other such descriptions.
+
+* **Clustering/Identifying patterns**
+
+  I will visualize the data by building a histogram to see the distribution of popularity based on the metric as defined above. I will also create a table of the comments which meet the above criteria for the most popular artists as indicated by the histogram.
+
+* **Classification of patterns** 
+
+  I will interpret the histogram and table to discern whether or not patterns point to an explanation for audience activity that correlates to popularity.
+
+* **Data Story**
+
+  I will explain my findings by providing an analysis of what the numbers represent in the bigger picture. 
+
+
+
+## **Deliverables**
+
+  Deliverables include:
+
+  1. The R code for a project of this nature
+  2. A paper 
+  3. A slide deck 
